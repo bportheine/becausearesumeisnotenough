@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Because a Resume is Not Enough</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,600|Montserrat:700,700i" rel="stylesheet">
+    <!--font-family: 'Hind', sans-serif;
+        font-family: 'Montserrat', sans-serif;-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!--------------js--------------js--------------js--------------js-------------->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script>
+
+/* Load/Refresh */
+
+      $(function(){
+        $('.inner-block-left').animate({width: '100%'}, 750);
+        $('.logo img').delay(1000).css({opacity: 0.0}).animate({opacity: 1.0});
+        $('.intro').delay(1050).css({opacity: 0.0}).animate({opacity: 1.0});
+        $('button').delay(1100).css({opacity: 0.0}).animate({opacity: 1.0});
+        $('.social-links').delay(1150).css({opacity: 0.0}).animate({opacity: 1.0});
+        $('h2').delay(1800).css({opacity: 0.0}).animate({opacity: 1.0});
+        $('.p').delay(2500).css({opacity: 0.0}).animate({opacity: 1.0});
+        $('.footer').delay(2500).css({opacity: 0.0}).animate({opacity: 1.0});
+      });
+
+      $(function(){
+        $('.logo').click(function(){
+          $('h4').toggle('slide')
+        });
+      });
+
+/* sl1 Hover */
+
+      $(function(){
+        $('.sl1').hover(function(){
+          $('.sl1w').hide();
+          }, function(){
+          $('.sl1w').show();
+        });
+      });
+
+      $(function(){
+        $('.sl1').hover(function(){
+          $('.sl1b').show();
+          }, function(){
+          $('.sl1b').hide();
+        });
+      });
+
+/* sl2 Hover */
+
+      $(function(){
+        $('.sl2').hover(function(){
+          $('.sl2w').hide();
+          }, function(){
+          $('.sl2w').show();
+        });
+      });
+
+      $(function(){
+        $('.sl2').hover(function(){
+          $('.sl2b').show();
+          }, function(){
+          $('.sl2b').hide();
+        });
+      });
+
+/* sl3 Hover */
+
+      $(function(){
+        $('.sl3').hover(function(){
+          $('.sl3w').hide();
+          }, function(){
+          $('.sl3w').show();
+        });
+      });
+
+      $(function(){
+        $('.sl3').hover(function(){
+          $('.sl3b').show();
+          }, function(){
+          $('.sl3b').hide();
+        });
+      });
+
+      $(function(){
+        $('.sl3').click(function(){
+          $('.gmail').fadeToggle(300);
+          });
+        });
+
+/* sl4 Hover */
+
+      $(function(){
+        $('.sl4').hover(function(){
+          $('.sl4w').hide();
+          }, function(){
+          $('.sl4w').show();
+        });
+      });
+
+      $(function(){
+        $('.sl4').hover(function(){
+          $('.sl4b').show();
+          }, function(){
+          $('.sl4b').hide();
+        });
+      });
+
+      $(function(){
+        $('.sl4').click(function(){
+          $('.outlook').fadeToggle(300);
+          });
+        });
+
+/* sl5  Hover */
+
+      $(function(){
+        $('.sl5').hover(function(){
+          $('.sl5w').hide();
+          }, function(){
+          $('.sl5w').show();
+        });
+      });
+
+      $(function(){
+        $('.sl5').hover(function(){
+          $('.sl5b').show();
+          }, function(){
+          $('.sl5b').hide();
+        });
+      });
+
+      $(function(){
+        $('.sl5').click(function(){
+          $('.phone').fadeToggle(300);
+          });
+        });
+
+    </script>
+
+<!--------------css--------------css--------------css--------------css-------------->
+
+    <style type="text/css" media="screen">
+
+      html, body, h1, h2, h3, h4, p, ol, ul, li, a {
+      padding: 0;
+      border: 0;
+      margin: 0;
+      text-decoration: none;
+      font-size: 16px;
+      font-family: Arial;
+      font: inherit;}
+
+      body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      font-size: 62.5%; /* 1em = 10px */}
+
+      .main {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      width: 100%;}
+
+      h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;}
+
+      p, a {
+      font-family: 'Hind', sans-serif;}
+
+/*left*/
+
+      .block-left {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 40%;
+      height: 100%;
+      line-height: 2rem;
+      float: left;}
+
+      .inner-block-left {
+      height: inherit;
+      width: 0;
+      background-color: #025d9e;
+      background: -webkit-linear-gradient(#025d9e, #000426);
+      background: -moz-linear-gradient(#025d9e, #000426);
+      background: -o-linear-gradient(#025d9e, #000426);
+      background: linear-gradient(#025d9e, #000426);
+      text-align: center;
+      padding: 2em 0 35em 0;}
+
+      .logo img {
+      width:8em;
+      height:12em;}
+
+      h4 {
+      position: relative;
+      font-size: 1.5em;
+      color: #fff;
+      display: none;}
+
+      .intro {
+      text-align: center;
+      font-size: 2.3em;
+      color: #fff;
+      padding: 13em 0 0.5em 0;}
+
+      #hello {
+      font-size: 1.1em;
+      margin-bottom: 1.5em;}
+
+      #fed {
+      color: #fff;}
+
+      #GIT {
+      margin-top: 1em;}
+
+      .social-links img {
+      width: 3.5em;
+      height: 3.5em;
+      padding: 1.5em .5em 0 .5em;}
+
+      .sl1b, .sl2b, .sl3b, .sl4b, .sl5b {
+      display: none;}
+
+      .gmail, .outlook, .phone {
+      font-size: 1.8em;
+      color: #fff;
+      display: none;}
+
+/*right*/
+
+      .block-right {
+      position: relative;
+      width: 60%;
+      height: 100%;
+      background-color: #fff;
+      float: right;}
+
+      .inner-block-right {
+      padding: 10em 0 0 0;}
+
+      .section-right {
+      margin: 0 0 8em 0;}
+
+      .block-right h2 {
+      font-size: 2em;
+      font-style: italic;
+      text-align: left;
+      width: 10em;
+      margin: 0 0 0 1em;
+      float: left;
+      background: -webkit-linear-gradient(left, #025d9e, #000426);
+      background: -moz-linear-gradient(left, #025d9e, #000426);
+      background: -o-linear-gradient(left, #025d9e, #000426);
+      background: linear-gradient(to right, #025d9e, #000426);
+      color:transparent;
+      -webkit-background-clip: text;
+      background-clip: text;}
+
+      .p {
+      padding: 0 1rem 1rem 6.5em;
+      margin: 0 2em 0 5.5em;
+      font-size: 2em;}
+
+      em {
+      color: grey;}
+
+      #dot{
+      color: #01376a;}
+
+      a:link {
+      color: #01376a;
+      background-color: transparent;
+      text-decoration: none;}
+
+      a:visited {
+      color: #55AE3A;
+      background-color: transparent;
+      text-decoration: none;}
+
+      a:hover {
+      color: #01376a;
+      background-color: transparent;
+      text-decoration: underline;}
+
+/*Media Queries*/
+
+      @media screen and (max-width: 1000px){
+
+      .block-left {
+      position: relative;
+      width: inherit;
+      height: 58rem;
+      float: none;}
+
+      .block-right {
+      margin: 0 0 0 0;
+      width: inherit;
+      float: none;}
+
+      .p {
+      padding-left: 1em;}
+
+      }
+      @media screen and (max-width: 1400px){
+
+      .block-right h2 {
+      float: none;}
+
+      .p {
+      width: 90%;
+      padding: 1rem 0 0 1em;
+      margin-left: 0;}
+
+      }
+    </style>
+  </head>
+
+<!--------------html--------------html--------------html--------------html-------------->
+
+  <body>
+    <div class="main">
+    <div class="block-left">
+      <div class="inner-block-left">
+        <div class="logo">
+          <img src="images/B-logo-w2.png">
+          <h4>Because a Resume is Not Enough</h4>
+        </div>
+        <div class="content-left">
+          <div class="intro">
+            <h1 id="hello">Hey, I'm Brandon C. Portheine,</h1>
+            <h1>a Dutch <span id="fed">front-end developer</span></h1>
+            <h1>with an American accent</h1>
+            <h1 id="GIT">GET IN TOUCH</h1>
+          </div>
+
+          <div class="social-links">
+
+            <a href="https://www.facebook.com/brandon.portheine" target="_blank">
+            <span class="sl1">
+              <span class="sl1w"><img src="images/icon-facebook2w.png"></span>
+              <span class="sl1b"><img src="images/icon-facebook2.png"></span>
+            </span></a>
+
+            <a href="https://uk.linkedin.com/in/brandon-portheine-147a5b88" target="_blank">
+            <span class="sl2">
+              <span class="sl2w"><img src="images/icon-linkedin2w.png"></span>
+              <span class="sl2b"><img src="images/icon-linkedin2.png"></span>
+            </span></a>
+
+            <span class="sl3">
+              <span class="sl3w"><img src="images/icon-gmail2w.png"></span>
+              <span class="sl3b"><img src="images/icon-gmail2.png"></span>
+            </span>
+
+            <span class="sl4">
+              <span class="sl4w"><img src="images/icon-outlook2w.png"></span>
+              <span class="sl4b"><img src="images/icon-outlook2.png"></span>
+            </span>
+
+            <span class="sl5">
+              <span class="sl5w"><img src="images/icon-phone2w.png"></span>
+              <span class="sl5b"><img src="images/icon-phone2.png"></span>
+            </span>
+          </div>
+
+          <div class="social-info">
+            <div class="gmail"><p>bportheine@gmail.com</p></div>
+            <div class="outlook"><p>bportheine22@hotmail.com</p></div>
+            <div class="phone"><p>+31 614801223</p></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="block-right">
+      <div class="inner-block-right">
+
+        <div class="section-right">
+          <h2>Who?</h2>
+
+          <div class="p">
+            <p>I'm a 24 years old dutch citizen, but English is my first language. I have lived in the Netherlands, Curacao, the U.S.A. and also in England. Now I'm living in Holland again, and looking for work.</p>
+          </div>
+        </div>
+
+        <div class="section-right">
+          <h2>Education</h2>
+
+          <div class="p">
+            <p>Because the amount of travel in my life, I have studied at international schools including the American School of the Hague, and  Graduating (Magna Cum Laude) from Lynn University with a Bachelores Degree in Business Administration. From there I have taught myself <em><span id="dot">&bull;</span> HTML5</em>, <em><span id="dot">&bull;</span> CSS3</em>, <em><span id="dot">&bull;</span> JavaScript</em>, and <em><span id="dot">&bull;</span> JQuery</em> using sites such as CodeSchool and Codecademy. I continue to brush up these languages and new ones everyday.</p>
+          </div>
+        </div>
+
+        <div class="section-right">
+          <h2>Experience</h2>
+
+          <div class="p">
+            <em><p>Lynn University(Boca Raton, Florida): Student Ambassador for J-Term Program</p></em>
+            <p>At Lynn University I was a teacher's assistant for a Dutch language and culture course. I would go on to help students with their work, and even teach a couple classes about celebrations and the political system.</p>
+            <em><p>Out of the Box Socks(Amsterdam, The Netherlands): Marketing Associate</p></em>
+            <p>Right out of college I came back home to help my brother with his new company, by doing whatever tasks would fall through the holes. Primary work consisted of building Excel spreadsheets for book keeping.</p>
+            <em><p>Abelian(London, England): Marketing Associate</p></em>
+            <p>While living in London I worked as a Marketing Associate, where I was in charge of creating email marketing material. Here most of my work was done in Adobe Photoshop and Mail Chimp.</p>
+          </div>
+        </div>
+        <div class="section-right">
+          <h2>Other Projects</h2>
+
+          <div class="p">
+            <a href="http://www.becausearesumeisnotenough.com/project1.html">Generic Indie Band Website</a><p>This a site made to show off some Photoshop ability with a theme; that being an indie band website.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
